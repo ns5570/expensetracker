@@ -1,0 +1,156 @@
+/* Expense.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Expense Tracker Container */
+  .expense-tracker {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fade-in 0.5s ease;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header Styles */
+  h1 {
+    text-align: center;
+    color: #333;
+    background-color: #007bff;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Form Styles */
+  .expense-form {
+    padding: 20px;
+  }
+  
+  .expense-form input[type="text"],
+  .expense-form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .expense-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .expense-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Expense List Styles */
+  .expense-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .expense-list ul {
+    list-style-type: none;
+  }
+  
+  .expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .expense-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .expense-list button {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .expense-list button:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Expense Summary Styles */
+  .expense-summary {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    font-size: 18px;
+  }
+  
+  .expense-summary p {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .expense-form button {
+      font-size: 16px;
+    }
+    
+    .expense-list li {
+      font-size: 14px;
+    }
+    
+    .expense-list button {
+      font-size: 12px;
+    }
+    
+    .expense-summary {
+      font-size: 16px;
+    }
+  }
+  /* Expense.css */
+
+
+
+/* Rest of your CSS remains unchanged */
